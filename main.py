@@ -54,7 +54,31 @@ edges = (
     (5,7)
 )
 
-model = Model.Cube(vertices, edges)
+colors = (
+    (1,0,0),
+    (0,1,0),
+    (0,0,1),
+    (0,1,0),
+    (1,1,1),
+    (0,1,1),
+    (1,0,0),
+    (0,1,0),
+    (0,0,1),
+    (1,0,0),
+    (1,1,1),
+    (0,1,1),
+)
+
+surfaces = (
+   (0,1,2,3),
+    (3,2,7,6),
+    (6,7,5,4),
+    (4,5,1,0),
+    (1,5,7,2),
+    (4,0,3,6)
+)
+
+model = Model.Cube(vertices, edges, surfaces, colors)
 help = Help()
 
 #setup window
